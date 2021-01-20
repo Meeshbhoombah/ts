@@ -1,2 +1,2 @@
 # ts
-✍️ Notes・🔎 References · 📚 Curriculum
+🏋️‍♂️ Exercises · 🧠 Challenges
