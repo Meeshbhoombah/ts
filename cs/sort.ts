@@ -9,12 +9,13 @@
  *
  */
 
+
 /*
  *
  * @param {[]} arr - the array to be sorted
  *
  */
-function selectionSort(arr: number[]): number[] {
+export function selectionSort(arr: number[]): number[] {
     let n = arr.length;
 
     for (let i = 0; i < n; i++) {
@@ -34,10 +35,4 @@ function selectionSort(arr: number[]): number[] {
 
     return arr;
 }
-
-
-const numbers = [...Array(40)].map(element => ~~(Math.random() * 20));
-console.log('Unsorted: ', numbers);
-selectionSort(numbers);
-console.log('Sorted: ', numbers);
 
