@@ -4,7 +4,7 @@ import {
     expect 
 } from '@jest/globals';
 
-import { selectionSort } from './sort';
+import { selectionSort } from './selectionSortFirstPass';
 
 
 describe('selection sort', () => {

@@ -22,15 +22,14 @@ export function selectionSort(arr: number[]): number[] {
         let minIndex = i;
 
         for(let j = i + 1; j < n; j++) {
-            if(arr[j] < arr[minIndex]) {
+            if (arr[j] <= arr[minIndex]) {
                 minIndex = j; 
-            }
+            } 
         }
 
         if (minIndex !== i) {
             [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
         }
-
     }
 
     return arr;
