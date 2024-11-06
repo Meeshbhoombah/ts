@@ -25,6 +25,7 @@ describe('selection sort', () => {
 });
 
 
+// import { bubbleSort } from './bubbleSortTemplate';
 import { bubbleSort } from './bubbleSortTemplate';
 
 describe('bubble sort', () => {
@@ -40,6 +41,25 @@ describe('bubble sort', () => {
     test('on an array of 10000 elements, where each element is <= 100', () => {
         let arr = [...Array(10000)].map(element => ~~(Math.random() * 100));
         expect(bubbleSort(arr)).toEqual(arr.sort());
+    });
+});
+
+
+import { insertionSort } from './insertionSortTemplate';
+
+describe('insertion sort', () => {
+    test('on an empty array', () => {
+        expect(insertionSort([])).toEqual([]);
+    });
+
+    test('on an array of 100 elements, where each element is <= 100', () => {
+        let arr = [...Array(100)].map(element => ~~(Math.random() * 100));
+        expect(insertionSort(arr)).toEqual(arr.sort());
+    });
+
+    test('on an array of 10000 elements, where each element is <= 100', () => {
+        let arr = [...Array(10000)].map(element => ~~(Math.random() * 100));
+        expect(insertionSort(arr)).toEqual(arr.sort());
     });
 });
 
