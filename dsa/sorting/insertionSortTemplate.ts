@@ -4,8 +4,8 @@
  *
  * Sorts a sequence of numbers
  *
- * Explainer: 
- * Reference: 
+ * Explainer: https://en.wikipedia.org/wiki/Insertion_sort
+ * Reference: https://algs4.cs.princeton.edu/21elementary/Insertion.java.html
  *
  */
 
