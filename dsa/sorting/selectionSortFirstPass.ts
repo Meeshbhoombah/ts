@@ -18,13 +18,17 @@
 export function selectionSort(arr: number[]): number[] {
     let n = arr.length;
 
-    for (let i = 0; i < n; i ++) {
+    for (let i = 0; i < n; i++) {
         let minIndex = i;
 
-        for (let j = 0; j < n; j++) {
-            if (minIndex < j) {
-                [arr[j], arr[minIndex]] = [arr[minIndex], arr[j]];
+        for (let j = i + 1; j < n; j++) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;
             }
+        }
+        
+        if (minIndex !== i) {
+            [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
         }
     }
 
