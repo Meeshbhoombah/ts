@@ -85,7 +85,11 @@ export class BinarySearchTree {
     }
 
     inorderTraversal() {
-         
+        let current: BinarySearchTree | null = this;
+
+        if (current != null) {
+            inorderTraversal(this.left);
+        }
     }
 
 }

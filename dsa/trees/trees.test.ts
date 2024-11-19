@@ -29,7 +29,6 @@ describe('binary search tree', () => {
         console.log('Search for existant 0.5', bst.fasterSearch(0.5));
         console.log('Search for non-existant -5', bst.fasterSearch(-5));
     });
-
 });
 
 
